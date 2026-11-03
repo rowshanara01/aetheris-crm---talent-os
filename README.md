@@ -58,7 +58,7 @@ crm-project/
 - [Python 3.10+](https://www.python.org/downloads/) and pip
 - Git
 
-### 1. Clone the repository
+### 1. Clone the repository ####
 
 ```bash
 git clone https://github.com/rowshanara01/your-repo-name.git
