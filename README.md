@@ -1,4 +1,4 @@
-# CRM Project #
+#### CRM Project #####
 
 A full-stack **Customer Relationship Management (CRM)** web application to manage customers, leads and sales activity in one place. Built with a **TypeScript** front-end and server, and a **Python** back-end service.
 
