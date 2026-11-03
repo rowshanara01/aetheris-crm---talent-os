@@ -12,7 +12,7 @@ A full-stack **Customer Relationship Management (CRM)** web application to manag
 
 This CRM helps teams keep track of their customers and sales pipeline. It centralizes contact information, follows leads from first contact to closed deal, and gives a clear overview of business activity through a simple dashboard.
 
-## ✨ Features
+# ✨ Features #
 
 - **Customer and contact management** – store, search and update customer details
 - **Lead tracking** – follow leads through each stage of the sales pipeline
