@@ -87,7 +87,7 @@ npm install
 npm run dev
 ```
 
-### 4. Set up and run the Python service
+### 4. Set up and run the Python service ###
 
 Open a second terminal:
 
