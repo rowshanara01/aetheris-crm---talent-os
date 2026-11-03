@@ -24,7 +24,7 @@ This CRM helps teams keep track of their customers and sales pipeline. It centra
 
 > Edit this list so it matches the features your CRM really has. Remove anything that is not built yet.
 
-## 🛠️ Tech Stack
+# Tech Stack #
 
 - **TypeScript** – front-end and server
 - **Bun / Node.js** – runtime and package management
