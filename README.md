@@ -50,7 +50,7 @@ crm-project/
 └── README.md
 ```
 
-## 🚀 Getting Started ##
+#### 🚀 Getting Started ####
 
 ### Prerequisites ###
 
