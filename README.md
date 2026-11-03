@@ -32,7 +32,7 @@ This CRM helps teams keep track of their customers and sales pipeline. It centra
 - **Render** – hosting and deployment
 - Add your frameworks, libraries and database here (for example React, Vite, Express, FastAPI, PostgreSQL)
 
-# 📁 Project Structure #
+#### Project Structure ####
 
 ```
 crm-project/
