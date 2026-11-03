@@ -73,7 +73,7 @@ cp .env.example .env
 
 On Windows Command Prompt, use `copy .env.example .env`, then fill in your own values in `.env`.
 
-### 3. Install and run the TypeScript app
+### 3. Install and run the TypeScript app ###
 
 ```bash
 bun install
