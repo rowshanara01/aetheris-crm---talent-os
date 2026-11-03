@@ -148,7 +148,7 @@ This project includes a `render.yaml` file, so it can be deployed on **Render**:
 
 > Replace these with your real plans, or remove this section.
 
-## 🤝 Contributing
+## 🤝 Contributing ##
 
 Contributions, issues and feature requests are welcome.
 
