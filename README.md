@@ -52,7 +52,7 @@ crm-project/
 
 #### 🚀 Getting Started ####
 
-### Prerequisites ###
+#### Prerequisites ####
 
 - [Bun](https://bun.sh/) (or [Node.js](https://nodejs.org/) v18+ with npm)
 - [Python 3.10+](https://www.python.org/downloads/) and pip
