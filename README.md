@@ -6,7 +6,7 @@ A full-stack **Customer Relationship Management (CRM)** web application to manag
 ![Python](https://img.shields.io/badge/Python-22.3%25-3776ab)
 ![Bun](https://img.shields.io/badge/Bun-000000?logo=bun&logoColor=white)
 
-🔗 **Live Demo:** [your-crm-link.onrender.com](https://your-crm-link.onrender.com)
+🔗 **Live Demo:** 
 
 ## 📌 About
 
