@@ -1,0 +1,8 @@
+# Aetheris CRM & Talent OS — Python Backend Requirements
+# Core runtime uses Python 3.10+ standard library (sqlite3, http.server, dataclasses, json)
+# for zero-friction execution inside containerized environments.
+# Optional packages below are provided if running standalone outside the integrated gateway:
+google-genai>=1.0.0
+fastapi>=0.115.0
+uvicorn>=0.32.0
+pydantic>=2.9.0

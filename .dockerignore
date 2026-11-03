@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+data/*.sqlite3
+data/*.sqlite3-wal
+data/*.sqlite3-shm
+backend_python/__pycache__
+*.log

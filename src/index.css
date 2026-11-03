@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Bricolage Grotesque', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    /* Default Theme Palette: Royal Indigo */
+    --brand-primary: #4338ca;
+    --brand-primary-hover: #3730a3;
+    --brand-secondary: #0284c7;
+    --brand-soft: #eef2ff;
+    --brand-border: #c7d2fe;
+    --brand-text: #312e81;
+    --canvas-bg: #f8fafc;
+  }
+
+  [data-theme="emerald"] {
+    --brand-primary: #047857;
+    --brand-primary-hover: #065f46;
+    --brand-secondary: #0d9488;
+    --brand-soft: #ecfdf5;
+    --brand-border: #a7f3d0;
+    --brand-text: #064e3b;
+  }
+
+  [data-theme="coral"] {
+    --brand-primary: #be123c;
+    --brand-primary-hover: #9f1239;
+    --brand-secondary: #d97706;
+    --brand-soft: #fff1f2;
+    --brand-border: #fecdd3;
+    --brand-text: #881337;
+  }
+
+  [data-theme="ocean"] {
+    --brand-primary: #0369a1;
+    --brand-primary-hover: #075985;
+    --brand-secondary: #4338ca;
+    --brand-soft: #f0f9ff;
+    --brand-border: #bae6fd;
+    --brand-text: #0c4a6e;
+  }
+
+  [data-theme="amethyst"] {
+    --brand-primary: #6d28d9;
+    --brand-primary-hover: #5b21b6;
+    --brand-secondary: #be185d;
+    --brand-soft: #f5f3ff;
+    --brand-border: #ddd6fe;
+    --brand-text: #4c1d95;
+  }
+
+  [data-canvas="pearl"] {
+    --canvas-bg: #f8fafc;
+  }
+
+  [data-canvas="sky"] {
+    --canvas-bg: #f1f6fd;
+  }
+
+  [data-canvas="warm"] {
+    --canvas-bg: #faf8f5;
+  }
+
+  html, body {
+    overflow-x: clip;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--canvas-bg);
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.btn-brand {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+  transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1), transform 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-brand:hover:not(:disabled) {
+  background-color: var(--brand-primary-hover);
+}
+
+.surface-brand-soft {
+  background-color: var(--brand-soft);
+  border-color: var(--brand-border);
+  color: var(--brand-text);
+}
+
+.text-brand {
+  color: var(--brand-primary);
+}
+
+.border-brand {
+  border-color: var(--brand-primary);
+}
+
+.bg-brand-banner {
+  background-image: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-voucher-sheet,
+  #printable-voucher-sheet * {
+    visibility: visible;
+  }
+  #printable-voucher-sheet {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    background: #ffffff;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 24px !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

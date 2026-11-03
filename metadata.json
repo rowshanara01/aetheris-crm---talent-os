@@ -1,0 +1,6 @@
+{
+  "name": "Aetheris CRM & Talent OS",
+  "description": "AI-powered enterprise CRM and talent retention platform with automated email responses, structured AI candidate interviews, customer churn prevention, and long-term retention architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
