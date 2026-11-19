@@ -65,7 +65,7 @@ git clone https://github.com/rowshanara01/your-repo-name.git
 cd your-repo-name
 ```
 
-### 2. Set up environment variables
+#### 2. Set up environment variables ####
 
 ```bash
 cp .env.example .env
