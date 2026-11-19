@@ -123,7 +123,7 @@ PYTHON_SERVICE_URL=http://127.0.0.1:8000
 
 > Never commit your `.env` file to GitHub. It is already listed in `.gitignore`.
 
-## 📸 Screenshots
+#### 📸 Screenshots ####
 
 ```md
 ![Dashboard](screenshots/dashboard.png)
