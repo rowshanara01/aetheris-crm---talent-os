@@ -104,13 +104,13 @@ pip install -r requirements.txt
 python backend_python/main.py
 ```
 
-### Build for production ###
+#### Build for production ####
 
 ```bash
 bun run build
 ```
 
-## 🔐 Environment Variables  ##
+#### 🔐 Environment Variables  ####
 
 Copy `.env.example` to `.env` and set your own values. Typical variables include:
 
