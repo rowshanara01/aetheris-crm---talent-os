@@ -139,7 +139,7 @@ This project includes a `render.yaml` file, so it can be deployed on **Render**:
 3. Add your environment variables in the Render dashboard
 4. Deploy. Render will build and start the services defined in `render.yaml`
 
-## 🗺️ Roadmap
+#### 🗺️ Roadmap ####
 
 - [ ] Email integration for customer communication
 - [ ] Import and export customers (CSV)
