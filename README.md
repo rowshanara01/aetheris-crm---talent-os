@@ -153,7 +153,7 @@ This project includes a `render.yaml` file, so it can be deployed on **Render**:
 Contributions, issues and feature requests are welcome.
 
 1. Fork the repository
-2. Create your branch (`git checkout -b feature/new-feature`)
+2. Create your branch (`git checkout -b feature/new-featurer`)
 3. Commit your changes (`git commit -m "Add new feature"`)
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Open a Pull Request
