@@ -41,7 +41,7 @@ pinned: false
 - **Issue:** AI Studio previews require port `3000`, Hugging Face Spaces requires `7860`, Render assigns a dynamic `$PORT`, and split deployments (Frontend on Vercel + Backend on Hugging Face) failed CORS preflight checks or crashed when `dist/index.html` wasn't present on a backend-only container.
 - **Fix:** Updated `server.ts` to bind `Number(process.env.PORT) || 3000`, added configurable CORS preflight handling (`CORS_ALLOWED_ORIGIN`), added a conditional `fs.existsSync` check for `dist/index.html` (falling back to JSON API health responses in backend-only mode), and added `VITE_API_BASE_URL` + `resolveApiUrl()` on the frontend (`src/services/crmApi.ts`).
 
-### 3. Node.js ↔ Python Subprocess Startup Race Condition
+#### 3. Node.js ↔ Python Subprocess Startup Race Condition
 - **Issue:** On cold container starts, incoming HTTP requests could hit Express before the spawned Python 3 HTTP microservice finished initializing the SQLite schema and listening on `127.0.0.1:8001`.
 - **Fix:** Built `PythonBackendSupervisor` (`server/persistence/PythonBridge.ts`) with a singleton `ensureStarted()` promise that polls `/health` (`100ms` intervals up to 3s) before forwarding any API request, and added a public `GET /api/health` endpoint reporting both gateway and Python engine health.
 
