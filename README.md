@@ -49,7 +49,7 @@ pinned: false
 - **Issue:** Initially, the 60-second walkthrough was triggered only from a single Hero button modal, and with HMR disabled in preview iframes, users on other views could not easily locate or launch the walkthrough.
 - **Fix:** Refactored `ProductVideoTourModal.tsx` to export an always-visible inline `EmbeddedProductVideoPlayer` directly on the Home page plus a persistent `FloatingVideoTourButton` (`bottom-4 right-4`) across both public and authenticated views, alongside a dedicated executive banner launcher in `OverviewView.tsx`.
 
-### 5. Admin Privilege Escalation & Credential Exposure Risk
+#### 5. Admin Privilege Escalation & Credential Exposure Risk
 - **Issue:** Allowing self-registration for `Admin` roles or embedding default Admin credentials in frontend quick-login buttons introduces a critical privilege-escalation risk in public deployments.
 - **Fix:** Locked public registration (`/api/auth/register`) strictly to `Specialist` accounts, removed all Admin credential hints from the UI, and implemented CLI provisioning (`backend_python/manage_admin.py`) plus startup synchronization from `INITIAL_ADMIN_EMAIL` / `INITIAL_ADMIN_PASSWORD` environment Secrets.
 
