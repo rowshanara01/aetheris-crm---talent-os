@@ -37,7 +37,7 @@ pinned: false
 - **Issue:** Hugging Face Docker Spaces execute containers as a non-root user (`uid=1000`). SQLite in Write-Ahead Logging (`WAL`) mode requires creating `.db-wal` and `.db-shm` lock files in the database directory, which fails with `readonly database` errors if `/app/data` is owned solely by `root`.
 - **Fix:** Updated `Dockerfile` to pre-create `/app/data` with `chmod -R 777 /app/data` and added a configurable `SQLITE_DATA_DIR` environment override in `backend_python/database.py`.
 
-### 2. Dual-Port & Split-Deployment Compatibility (`3000` vs `7860` / Monorepo vs Split Repo)
+#### 2. Dual-Port & Split-Deployment Compatibility (`3000` vs `7860` / Monorepo vs Split Repo)
 - **Issue:** AI Studio previews require port `3000`, Hugging Face Spaces requires `7860`, Render assigns a dynamic `$PORT`, and split deployments (Frontend on Vercel + Backend on Hugging Face) failed CORS preflight checks or crashed when `dist/index.html` wasn't present on a backend-only container.
 - **Fix:** Updated `server.ts` to bind `Number(process.env.PORT) || 3000`, added configurable CORS preflight handling (`CORS_ALLOWED_ORIGIN`), added a conditional `fs.existsSync` check for `dist/index.html` (falling back to JSON API health responses in backend-only mode), and added `VITE_API_BASE_URL` + `resolveApiUrl()` on the frontend (`src/services/crmApi.ts`).
 
