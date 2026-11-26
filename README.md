@@ -14,7 +14,7 @@ pinned: false
 
 ---
 
-## Key Features
+#### Key Features
 - **Public Corporate Portal & Interactive Tour:** Multi-page public website (`Home`, `Solutions`, `Careers`, `Pricing`, `Contact`, `Login`, `Register`) with a built-in 60-second animated walkthrough (`ProductVideoTourModal`) and live platform sandbox.
 - **Commercial Deal Pipeline & Client Retention:** Track enterprise contracts, health scores, churn signals, and 36-month client longevity forecasting (`BDT ৳` / `USD $` and `বাংলা` / `English`).
 - **AI Email Auto-Reply & Specialist Routing:** Classifies incoming inquiries, drafts contextual replies, and routes tickets to the right department specialist.
