@@ -8,7 +8,7 @@ app_port: 7860
 pinned: false
 ---
 
-# Aetheris CRM & Talent OS
+#### Aetheris CRM & Talent OS
 
 **Aetheris CRM & Talent OS** is an enterprise full-stack Customer Retention, Commercial Pipeline, AI Email Routing, 4-Axis Candidate Interviewing, and Workforce Payroll platform powered by a **Node.js Express Gateway**, a **Python 3 SQLite (WAL) Domain Engine**, **Google Gemini AI**, and a **React 19 + TypeScript** frontend.
 
