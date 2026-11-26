@@ -31,7 +31,7 @@ pinned: false
 
 ---
 
-## Issues Faced & How They Were Fixed
+#### Issues Faced & How They Were Fixed
 
 ### 1. Hugging Face Spaces Non-Root SQLite Permission Error (`uid=1000`)
 - **Issue:** Hugging Face Docker Spaces execute containers as a non-root user (`uid=1000`). SQLite in Write-Ahead Logging (`WAL`) mode requires creating `.db-wal` and `.db-shm` lock files in the database directory, which fails with `readonly database` errors if `/app/data` is owned solely by `root`.
