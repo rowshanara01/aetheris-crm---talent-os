@@ -24,7 +24,7 @@ pinned: false
 
 ---
 
-## Hybrid Architecture (Node.js + Python 3)
+#### Hybrid Architecture (Node.js + Python 3)
 1. **React 19 + Vite SPA (`src/`):** Serves the public marketing pages, interactive video walkthrough, and authenticated CRM/HR workspace.
 2. **Node.js Express Gateway (`server.ts` & `server/`):** Handles port binding (`3000` locally / `7860` on Hugging Face), CORS headers, JWT/session authentication, Gemini AI orchestration, and spawns/monitors the Python engine.
 3. **Python 3 SQLite3 WAL Microservice (`backend_python/`):** Runs on internal `127.0.0.1:8001` and communicates with Node.js over local HTTP JSON payloads (`PythonBridge.ts`), managing ACID persistence, financial math, and SMTP dispatch.
