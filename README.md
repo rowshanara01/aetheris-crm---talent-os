@@ -45,7 +45,7 @@ pinned: false
 - **Issue:** On cold container starts, incoming HTTP requests could hit Express before the spawned Python 3 HTTP microservice finished initializing the SQLite schema and listening on `127.0.0.1:8001`.
 - **Fix:** Built `PythonBackendSupervisor` (`server/persistence/PythonBridge.ts`) with a singleton `ensureStarted()` promise that polls `/health` (`100ms` intervals up to 3s) before forwarding any API request, and added a public `GET /api/health` endpoint reporting both gateway and Python engine health.
 
-### 4. Interactive Video Tour Not Visible in Disabled-HMR Preview Iframes
+#### 4. Interactive Video Tour Not Visible in Disabled-HMR Preview Iframes
 - **Issue:** Initially, the 60-second walkthrough was triggered only from a single Hero button modal, and with HMR disabled in preview iframes, users on other views could not easily locate or launch the walkthrough.
 - **Fix:** Refactored `ProductVideoTourModal.tsx` to export an always-visible inline `EmbeddedProductVideoPlayer` directly on the Home page plus a persistent `FloatingVideoTourButton` (`bottom-4 right-4`) across both public and authenticated views, alongside a dedicated executive banner launcher in `OverviewView.tsx`.
 
