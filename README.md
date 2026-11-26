@@ -55,7 +55,7 @@ pinned: false
 
 ---
 
-## Hugging Face Spaces & Cloud Deployment Configuration
+#### Hugging Face Spaces & Cloud Deployment Configuration
 - **SDK:** `docker`
 - **Port:** `7860` (set automatically in `Dockerfile`; AI Studio local preview defaults to `3000`)
 - **Required & Optional Secrets** (**Settings → Variables and secrets**):
